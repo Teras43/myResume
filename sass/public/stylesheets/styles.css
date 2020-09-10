@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.resumeContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  border: 2px solid black;
+  margin: 40px 0px;
+}
+
+.flexRow {
+  display: flex;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.topBlock {
+  margin: 70px 30px 40px 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+.pageContent {
+  display: flex;
+}
+
+.leftSide {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  margin: 0px 0px 50px 30px;
+}
+
+.rightSide {
+  display: flex;
+  flex: 6;
+  flex-direction: column;
+  margin: 0px 0px 50px 30px;
+}
+
+.contactBody {
+  margin: 0px 30px 60px 0px;
+}
+
+.contactInfo {
+  font-size: 20px;
+}
+
+.skillsRating {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
