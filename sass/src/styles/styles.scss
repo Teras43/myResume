@@ -2,13 +2,17 @@
 
 @import "resetDefault";
 
+// Mixin
+
+
 // Variables
 
 $bottomLeftSpacing: 0px 0px 50px 30px;
-$bottomRightMargin: 0px 30px 60px 0px;
-$sizedFonts1: 20px;
-$sizedFonts2: 18px;
-$sizedFonts3: 28px;
+$bottomRightMargin1: 0px 30px 50px 0px;
+$bottomRightMargin2: 0px 30px 30px 0px;
+$sizedFonts1: 30px;
+$sizedFonts2: 22px;
+$sizedFonts3: 42px;
 
 // General Page CSS
 
@@ -46,11 +50,20 @@ $sizedFonts3: 28px;
     display: flex;
 }
 
+h1 {
+    font-size: $sizedFonts3;
+}
+
+.dressTextTop {
+    font-size: $sizedFonts2;
+}
+
 .leftSide {
     display: flex;
     flex: 3;
     flex-direction: column;
     margin: $bottomLeftSpacing;
+    border-right: 1px solid black;
 }
 
 .rightSide {
@@ -60,14 +73,36 @@ $sizedFonts3: 28px;
     margin: $bottomLeftSpacing;
 }
 
-.contactBody {
-    margin: $bottomRightMargin;
-}
-
 .contactInfo {
-    font-size: $sizedFonts1
+    font-size: $sizedFonts2;
 }
 
-.skillsRating  {
+.contactBody {
+    margin: $bottomRightMargin1;
+}
+
+h2 { 
     font-size: $sizedFonts1;
+    margin-top: 0px;
+}
+
+.technicalSkills {
+    justify-content: space-between;
+}
+
+.technicalBody {
+    margin: $bottomRightMargin2;
+}
+
+.techBodyNames {
+    @extend .technicalSkills;
+    align-items: center;
+}
+
+.skillsRating {
+    font-size: $sizedFonts2;
+}
+
+.referencesInfo {
+    font-size: $sizedFonts2;
 }

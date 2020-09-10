@@ -35,11 +35,20 @@ html, body {
   display: flex;
 }
 
+h1 {
+  font-size: 42px;
+}
+
+.dressTextTop {
+  font-size: 22px;
+}
+
 .leftSide {
   display: flex;
   flex: 3;
   flex-direction: column;
   margin: 0px 0px 50px 30px;
+  border-right: 1px solid black;
 }
 
 .rightSide {
@@ -49,16 +58,37 @@ html, body {
   margin: 0px 0px 50px 30px;
 }
 
-.contactBody {
-  margin: 0px 30px 60px 0px;
+.contactInfo {
+  font-size: 22px;
 }
 
-.contactInfo {
-  font-size: 20px;
+.contactBody {
+  margin: 0px 30px 50px 0px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+.technicalSkills, .techBodyNames {
+  justify-content: space-between;
+}
+
+.technicalBody {
+  margin: 0px 30px 30px 0px;
+}
+
+.techBodyNames {
+  align-items: center;
 }
 
 .skillsRating {
-  font-size: 20px;
+  font-size: 22px;
+}
+
+.referencesInfo {
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=styles.css.map */
