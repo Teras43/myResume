@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,16 +16,17 @@
             <div class="topBlock flexRow">
                 <div class="topLeft">
                     <h1>Brandon Curtis</h1>
-                    <span class="dressTextTop">Aspiring Web Developer</span>
+                    <span class="dressTextTop">Student Web Developer</span>
                 </div>
                 <div class="topRight">
-                    <img src="../img/agreement.svg" alt="No Img" width="200" height="200">
+                    <img class="topRightImg" src="../img/pictureofme.png" alt="No Img" width="200" height="258">
                 </div>
             </div>
             <div class="pageContent flexRow">
                 <div class="leftSide">
                     <div class="contactInfo">
                         <h2>Contact Info</h2>
+                        <!-- <hr class="contactInfoUnderline"/> -->
                         <div class="flexRow">
                             <span class="contactBody">Phone:</span> 385-304-8233
                         </div>
@@ -180,17 +183,49 @@
                     <div class="referencesInfo">
                         <h2>References</h2>
                         <p>
-                            Chris Neidrich &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; (###) ### - ####
+                            Chris Neidrich &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; (801) 318 - 1907
                         </p>
+                        <br/>
                         <p>
-                            Nick Dombrosky &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; (###) ### - ####
+                            Nick<br/> Dombrosky &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; (801) 471 - 6709
+                        </p>
+                        <br/>
+                        <p>
+                            Taft Miller &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; (385) 207 - 1419
                         </p>
                     </div>
                 </div>
                 <div class="rightSide">
                     <div class="experienceBlock">
-                        <h2>Experience</h2>
+                        <h2 class="rightSideHeader">Experience</h2>
                         <div class="experienceBody">
+                            <div class="experienceTop flexRow">
+                                <p>
+                                    3D Artist - Lucille Games
+                                </p>
+                                <p>
+                                    2017-2018
+                                </p>
+                            </div>
+                            <div class="experienceText">
+                                Created 3D models for multiple things for the Roblox platform including weapons, armor
+                                firearms, map assets and skins. I also polished existing maps and created multiple new ones
+                                for multiple types of games. I used Roblox Studio, Blender and Adobe Photoshop.
+                            </div>
+                            <div class="experienceTop flexRow">
+                                <p>
+                                    Broadband Tech Support - ServerPlus
+                                </p>
+                                <p>
+                                    2015-2015
+                                </p>
+                            </div>
+                            <div class="experienceText">
+                                In this role I would assist many customers per day as they called into us with issues 
+                                regarding their DSL, Fixed Wireless or Broadband internet connections. 
+                                I would go through and troubleshoot any issues with them and help resolve them 
+                                in a timely manner.
+                            </div>
                             <div class="experienceTop flexRow">
                                 <p>
                                     Secondary ICS Supervisor - Walmart
@@ -208,31 +243,27 @@
                         </div>
                     </div>
                     <div class="profileBlock">
-                        <h2>Profile</h2>
+                        <h2 class="rightSideHeader">Profile</h2>
                         <p class="profileText">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Ducimus esse recusandae placeat voluptate sit veniam odio nesciunt quam incidunt
-                            sequi perferendis corporis,
-                            autem fugiat atque repellendus laboriosam voluptatibus temporibus!
-                            Accusamus iste nemo odit vel eius totam officiis modi quibusdam fugiat et error
-                            voluptate consequatur, excepturi corporis quidem labore praesentium placeat fugit rem quia.
-                            Voluptatem reiciendis autem libero sunt corrupti assumenda suscipit?
-                            Minima accusantium incidunt debitis, omnis facilis totam quibusdam aliquid.
+                            I have had 8 years of experience is customer service based upon multiple jobs that primarily require it.
+                            In regards to computer hardware I have been building and using computers since I was 12. I have built my own computer multiple times and I have knowledge on current computer hardware.
+                            Programming experience has only been something for me in the last year or so.
+                            I also know 3D modeling based in Blender and have used it quite a bit.  
                         </p>
                     </div>
                     <div class="socialBlock">
-                        <h2>Social</h2>
-                        <div class="socialText flexRow">
+                        <h2 class="rightSideHeader">Social</h2>
+                        <div class="socialText flexColumn">
                             <p>
-                                <img src="../img/facebook-svgrepo-com.svg" alt="No Img" width="25" height="25"> &nbsp; <a class="allLink" href="#">Facebook Link</a>
+                                <img src="../img/facebook-svgrepo-com.svg" alt="No Img" width="25" height="25"> &nbsp; <a class="allLink" href="https://www.facebook.com/brandcurtis">https://www.facebook.com/brandcurtis</a>
                             </p>
                             <p>
-                                <img src="../img/linkedin-svgrepo-com.svg" alt="No Img" width="25" height="25"> <a class="allLink" href="#">LinkedIn Link</a>
+                                <img src="../img/linkedin-svgrepo-com.svg" alt="No Img" width="25" height="25"> <a class="allLink" href="https://www.linkedin.com/in/brandcurtis/">https://www.linkedin.com/in/brandcurtis/</a>
                             </p>
                         </div>
                     </div>
                     <div class="educationBlock">
-                        <h2>Education</h2>
+                        <h2 class="rightSideHeader">Education</h2>
                         <div class="educationText flexColumn">
                             <div class="educationTextTop flexRow">
                                 <p>
@@ -245,6 +276,19 @@
                             <div class="educationTextBot flexRow">
                                 <p>
                                     Payson UT, USA
+                                </p>
+                            </div>
+                            <div class="educationTextTop flexRow">
+                                <p>
+                                    Web Programming & Development,<br/> Mountainland Technical College
+                                </p>
+                                <p>
+                                    2020-2021
+                                </p>
+                            </div>
+                            <div class="educationTextBot flexRow">
+                                <p>
+                                    Lehi UT, USA
                                 </p>
                             </div>
                         </div>

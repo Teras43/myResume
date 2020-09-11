@@ -29,25 +29,38 @@ html, body {
 
 .topBlock {
   margin: 70px 30px 40px 30px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   border-bottom: 1px solid black;
   justify-content: space-between;
 }
 
+.topLeft {
+  margin-top: 45px;
+}
+
 .topRight {
   margin-right: 90px;
+  border: 3px solid #1e1e24;
+  width: 250px;
 }
 
 .topRightImg {
-  fill: #091540;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 h1 {
   font-size: 55px;
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  color: #1e1e24;
 }
 
 .dressTextTop {
   font-size: 33px;
+  font-family: "Ubuntu", sans-serif;
+  color: #3f4045;
 }
 
 .leftSide {
@@ -66,11 +79,14 @@ h1 {
 }
 
 .contactInfo, .referencesInfo, .skillsRating {
-  font-size: 20px;
+  font-size: 23px;
+  margin-right: 20px;
 }
 
 .contactBody, .technicalBody, h2 {
   margin: 0px 30px 30px 0px;
+  font-family: "Gayathri", sans-serif;
+  color: #1e1e24;
 }
 
 .allLink {
@@ -81,6 +97,22 @@ h1 {
 h2 {
   font-size: 33px;
   margin-top: 0px;
+  color: #3f4045;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.rightSideHeader {
+  width: 316.328px;
+  margin-bottom: 20px;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  width: 20%;
+  height: 2px;
+  background-color: black;
 }
 
 .technicalSkills, .educationText, .educationTextBot, .educationTextTop, .socialText, .experienceTop, .techBodyNames {
@@ -91,40 +123,52 @@ h2 {
   align-items: center;
 }
 
+.skillsRating {
+  font-family: "Gayathri", sans-serif;
+}
+
+.referencesInfo {
+  font-family: "Gayathri", sans-serif;
+}
+
 .experienceBody {
   margin: 0px 75px 30px 75px;
   justify-content: center;
   text-align: center;
+  font-family: "Gayathri", sans-serif;
 }
 
 .experienceTop {
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .experienceText {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .profileText {
   margin: 0px 75px 30px 75px;
   justify-content: center;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: "Gayathri", sans-serif;
 }
 
 .socialText {
   margin: 0px 90px 20px 90px;
-  font-size: 20px;
+  font-size: 23px;
+  font-family: "Gayathri", sans-serif;
 }
 
 .educationText, .educationTextBot, .educationTextTop {
   margin-left: 45px;
   margin-right: 45px;
-  font-size: 20px;
+  font-size: 23px;
+  font-family: "Gayathri", sans-serif;
 }
 
-.educationTextBot > p {
-  margin-top: 0px;
+.educationTextBot {
+  margin-top: -30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
