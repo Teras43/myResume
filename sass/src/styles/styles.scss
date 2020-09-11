@@ -4,7 +4,7 @@
 
 // Mixin
 @mixin paragraphFormats {
-    margin: 0px 110px 15px 110px;
+    margin: 0px 75px 30px 75px;
     justify-content: center;
     text-align: center;
 }
@@ -12,14 +12,15 @@
 // Variables
 
 $justifyMiddle: space-between;
-$mainBodyWidth: 300px;
+$mainBodyWidth: 600px;
 $bottomLeftMargin: 0px 0px 50px 30px;
 $bottomRightMargin1: 0px 30px 50px 0px;
 $bottomRightMargin2: 0px 30px 30px 0px;
-$sizedFonts1: 42px;
-$sizedFonts2: 30px;
-$sizedFonts3: 25px;
-$sizedFonts4: 22px;
+$textBodyMargin: 0px 75px 20px 75px;
+$sizedFonts1: 48px;
+$sizedFonts2: 33px;
+$sizedFonts3: 20px;
+$sizedFonts4: 18px;
 
 // General Page CSS
 
@@ -31,7 +32,7 @@ $sizedFonts4: 22px;
 .resumeContainer {
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
+    max-width: 1100px;
     border: 2px solid black;
     margin: 40px 0px;
   }
@@ -53,16 +54,12 @@ $sizedFonts4: 22px;
     border-bottom: 1px solid black;
 }
 
-.pageContent {
-    display: flex;
-}
-
 h1 {
     font-size: $sizedFonts1;
 }
 
 .dressTextTop {
-    font-size: $sizedFonts3;
+    font-size: $sizedFonts2;
 }
 
 .leftSide {
@@ -78,11 +75,10 @@ h1 {
     flex: 6;
     flex-direction: column;
     margin: $bottomLeftMargin;
-    margin-right: 30px;
 }
 
 .contactInfo {
-    font-size: $sizedFonts4;
+    font-size: $sizedFonts3;
 }
 
 .contactBody {
@@ -90,6 +86,7 @@ h1 {
 }
 
 h2 { 
+    @extend .contactBody;
     font-size: $sizedFonts2;
     margin-top: 0px;
 }
@@ -99,7 +96,7 @@ h2 {
 }
 
 .technicalBody {
-    margin: $bottomRightMargin2;
+    @extend .contactBody;
 }
 
 .techBodyNames {
@@ -108,11 +105,11 @@ h2 {
 }
 
 .skillsRating {
-    font-size: $sizedFonts4;
+    @extend .contactInfo;
 }
 
 .referencesInfo {
-    font-size: $sizedFonts4;
+    @extend .contactInfo;
 }
 
 .experienceBody {
@@ -120,5 +117,35 @@ h2 {
 }
 
 .experienceTop {
-    justify-content: $justifyMiddle;
+    @extend .technicalSkills;
+    font-size: $sizedFonts3;
+}
+
+.experienceText {
+    font-size: $sizedFonts4;
+}
+
+.profileText {
+    @include paragraphFormats();
+    font-size: $sizedFonts4;
+}
+
+.socialText {
+    @extend .technicalSkills;
+    margin: $textBodyMargin;
+    font-size: $sizedFonts3;
+}
+
+.educationText {
+    @extend .technicalSkills;
+    margin: $textBodyMargin;
+    font-size: $sizedFonts3;
+}
+
+.educationTextTop {
+    @extend .educationText;
+}
+
+.educationTextBot {
+    @extend .educationText;
 }
