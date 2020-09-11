@@ -3,16 +3,23 @@
 @import "resetDefault";
 
 // Mixin
-
+@mixin paragraphFormats {
+    margin: 0px 110px 15px 110px;
+    justify-content: center;
+    text-align: center;
+}
 
 // Variables
 
-$bottomLeftSpacing: 0px 0px 50px 30px;
+$justifyMiddle: space-between;
+$mainBodyWidth: 300px;
+$bottomLeftMargin: 0px 0px 50px 30px;
 $bottomRightMargin1: 0px 30px 50px 0px;
 $bottomRightMargin2: 0px 30px 30px 0px;
-$sizedFonts1: 30px;
-$sizedFonts2: 22px;
-$sizedFonts3: 42px;
+$sizedFonts1: 42px;
+$sizedFonts2: 30px;
+$sizedFonts3: 25px;
+$sizedFonts4: 22px;
 
 // General Page CSS
 
@@ -51,18 +58,18 @@ $sizedFonts3: 42px;
 }
 
 h1 {
-    font-size: $sizedFonts3;
+    font-size: $sizedFonts1;
 }
 
 .dressTextTop {
-    font-size: $sizedFonts2;
+    font-size: $sizedFonts3;
 }
 
 .leftSide {
     display: flex;
     flex: 3;
     flex-direction: column;
-    margin: $bottomLeftSpacing;
+    margin: $bottomLeftMargin;
     border-right: 1px solid black;
 }
 
@@ -70,24 +77,25 @@ h1 {
     display: flex;
     flex: 6;
     flex-direction: column;
-    margin: $bottomLeftSpacing;
+    margin: $bottomLeftMargin;
+    margin-right: 30px;
 }
 
 .contactInfo {
-    font-size: $sizedFonts2;
+    font-size: $sizedFonts4;
 }
 
 .contactBody {
-    margin: $bottomRightMargin1;
+    margin: $bottomRightMargin2;
 }
 
 h2 { 
-    font-size: $sizedFonts1;
+    font-size: $sizedFonts2;
     margin-top: 0px;
 }
 
 .technicalSkills {
-    justify-content: space-between;
+    justify-content: $justifyMiddle;
 }
 
 .technicalBody {
@@ -100,9 +108,17 @@ h2 {
 }
 
 .skillsRating {
-    font-size: $sizedFonts2;
+    font-size: $sizedFonts4;
 }
 
 .referencesInfo {
-    font-size: $sizedFonts2;
+    font-size: $sizedFonts4;
+}
+
+.experienceBody {
+    @include paragraphFormats();
+}
+
+.experienceTop {
+    justify-content: $justifyMiddle;
 }
