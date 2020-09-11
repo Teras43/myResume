@@ -6,6 +6,7 @@ html, body {
 .pageContainer {
   display: flex;
   justify-content: center;
+  background-color: #091540;
 }
 
 .resumeContainer {
@@ -14,6 +15,7 @@ html, body {
   max-width: 1100px;
   border: 2px solid black;
   margin: 40px 0px;
+  background-color: #FAFAFF;
 }
 
 .flexRow {
@@ -29,10 +31,19 @@ html, body {
   margin: 70px 30px 40px 30px;
   padding-bottom: 15px;
   border-bottom: 1px solid black;
+  justify-content: space-between;
+}
+
+.topRight {
+  margin-right: 90px;
+}
+
+.topRightImg {
+  fill: #091540;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 55px;
 }
 
 .dressTextTop {
@@ -60,6 +71,11 @@ h1 {
 
 .contactBody, .technicalBody, h2 {
   margin: 0px 30px 30px 0px;
+}
+
+.allLink {
+  text-decoration: none;
+  color: #1B2CC1;
 }
 
 h2 {
@@ -97,13 +113,18 @@ h2 {
 }
 
 .socialText {
-  margin: 0px 75px 20px 75px;
+  margin: 0px 90px 20px 90px;
   font-size: 20px;
 }
 
 .educationText, .educationTextBot, .educationTextTop {
-  margin: 0px 75px 20px 75px;
+  margin-left: 45px;
+  margin-right: 45px;
   font-size: 20px;
+}
+
+.educationTextBot > p {
+  margin-top: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */

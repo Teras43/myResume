@@ -16,17 +16,22 @@ $mainBodyWidth: 600px;
 $bottomLeftMargin: 0px 0px 50px 30px;
 $bottomRightMargin1: 0px 30px 50px 0px;
 $bottomRightMargin2: 0px 30px 30px 0px;
-$textBodyMargin: 0px 75px 20px 75px;
-$sizedFonts1: 48px;
+$textBodyMargin: 0px 90px 20px 90px;
+$sizedFonts1: 55px;
 $sizedFonts2: 33px;
 $sizedFonts3: 20px;
 $sizedFonts4: 18px;
+$resumeBackgroundColor: #FAFAFF;
+$pageBackgroundColor: #091540;
+$linkAndCircleColor: #1B2CC1;
+$secondaryColor: #016FB9;
 
 // General Page CSS
 
 .pageContainer {
     display: flex;
     justify-content: center;
+    background-color: $pageBackgroundColor;
 }
 
 .resumeContainer {
@@ -35,6 +40,7 @@ $sizedFonts4: 18px;
     max-width: 1100px;
     border: 2px solid black;
     margin: 40px 0px;
+    background-color: $resumeBackgroundColor;
   }
 
   .flexRow {
@@ -52,6 +58,15 @@ $sizedFonts4: 18px;
     margin: 70px 30px 40px 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid black;
+    justify-content: $justifyMiddle;
+}
+
+.topRight {
+    margin-right: 90px;
+}
+
+.topRightImg {
+    fill: #091540;
 }
 
 h1 {
@@ -83,6 +98,11 @@ h1 {
 
 .contactBody {
     margin: $bottomRightMargin2;
+}
+
+.allLink {
+    text-decoration: none;
+    color: $linkAndCircleColor;
 }
 
 h2 { 
@@ -119,6 +139,7 @@ h2 {
 .experienceTop {
     @extend .technicalSkills;
     font-size: $sizedFonts3;
+    // color: $secondaryColor;
 }
 
 .experienceText {
@@ -138,14 +159,21 @@ h2 {
 
 .educationText {
     @extend .technicalSkills;
-    margin: $textBodyMargin;
+    margin-left: 45px;
+    margin-right: 45px;
     font-size: $sizedFonts3;
 }
 
 .educationTextTop {
     @extend .educationText;
+    // color: $secondaryColor;
 }
 
 .educationTextBot {
     @extend .educationText;
+    // color: $secondaryColor;
+}
+
+.educationTextBot > p {
+    margin-top: 0px;
 }
