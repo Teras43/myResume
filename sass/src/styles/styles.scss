@@ -21,14 +21,14 @@ $sizedFonts1: 55px;
 $sizedFonts2: 33px;
 $sizedFonts3: 23px;
 $sizedFonts4: 20px;
-$resumeBackgroundColor: #FAFAFF;
+$resumeBackgroundColor: #fafaff;
 $pageBackgroundColor: #091540;
-$linkAndCircleColor: #1B2CC1;
+$linkAndCircleColor: #1b2cc1;
 $primaryColor: #1e1e24;
-$secondaryColor: #016FB9;
+$secondaryColor: #016fb9;
 $thirdColor: #3f4045;
-$fontStack: 'Gayathri', sans-serif;
-$fontStack2: 'Ubuntu', sans-serif;
+$fontStack: "Gayathri", sans-serif;
+$fontStack2: "Ubuntu", sans-serif;
 
 // General Page CSS
 
@@ -45,40 +45,46 @@ $fontStack2: 'Ubuntu', sans-serif;
     border: 2px solid black;
     margin: 40px 0px;
     background-color: $resumeBackgroundColor;
-  }
+}
 
-  .flexRow {
-      display: flex;
-  }
+.flexRow {
+    display: flex;
+}
 
-  .flexColumn {
-      display: flex;
-      flex-direction: column;
-  }
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
 
 //   Resume CSS
 
 .topBlock {
-    margin: 70px 30px 40px 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid black;
     justify-content: $justifyMiddle;
+    background-image: url(../../../sass/img/pexels-bay.jpg);
+    background-size: cover;
+    height: 350px;
 }
 
 .topLeft {
-    margin-top: 45px;
+    margin-top: 100px;
+    margin-left: 30px;
 }
 
 .topRight {
     margin-right: 90px;
-    border: 3px solid $primaryColor;
+    margin-top: 70px;
     width: 250px;
+    height: 250px;
 }
 
 .topRightImg {
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    border: 1px solid $primaryColor;
+    border-radius: 50%;
 }
 
 h1 {
@@ -98,15 +104,17 @@ h1 {
     display: flex;
     flex: 3;
     flex-direction: column;
-    margin: $bottomLeftMargin;
+    padding: 30px 0px 50px 30px;
     border-right: 1px solid black;
+    background-color: #f9f9f9;
 }
 
 .rightSide {
     display: flex;
     flex: 6;
     flex-direction: column;
-    margin: $bottomLeftMargin;
+    padding: 30px 0px 50px 30px;
+    background-color: #f0f0f0;
 }
 
 .contactInfo {
@@ -125,7 +133,7 @@ h1 {
     color: $linkAndCircleColor;
 }
 
-h2 { 
+h2 {
     @extend .contactBody;
     font-size: $sizedFonts2;
     margin-top: 0px;
@@ -168,6 +176,12 @@ h2:after {
 .referencesInfo {
     @extend .contactInfo;
     font-family: $fontStack;
+}
+
+#reference {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .experienceBody {
